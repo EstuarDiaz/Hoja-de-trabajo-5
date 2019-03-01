@@ -1,0 +1,1 @@
+Se recomienda utilizar 2 procesadores como una solucion optima para mejorar el promedio de respuesta para cada proceso.
