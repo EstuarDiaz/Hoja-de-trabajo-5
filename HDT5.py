@@ -6,6 +6,8 @@ Created on Fri Feb 22 11:33:48 2019
 """
 import simpy
 import random
+import plotly.plotly as py
+import plotly.graph_objs as go
 
 interval = 10
 numero_de_procesos = 5
@@ -58,4 +60,13 @@ for i in range(numero_de_procesos):
 
 env.run(until = tiempo_simulacion)  #correr la simulación hasta el tiempo especificado
 
-# Usar pyChart para graficar los timpos
+# Usar plotly para graficar los timpos
+def graficos():
+    trace1 = go.Bar(
+            x=['25 ', '50 procesos', '100 procesos', '150 procesos', '200 procesos'],
+            y= [],
+            name='Tiempo promedio con 25 procesos'
+            )
+    trace2 = go.Bar(
+            x=[]
+            )
